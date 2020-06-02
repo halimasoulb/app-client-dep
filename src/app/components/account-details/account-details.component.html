@@ -1,0 +1,42 @@
+<div>
+    <div class="panel-body"  >
+        <div *ngIf="!compte"id="im3">
+            <img id="ima3" src="../../assets/image/im4.jpg"  />
+        </div>
+    <div *ngIf="compte!=null" class="ajuster">
+
+        <div class="MyAccount">
+            <div class="mat-title" >Account : {{compte.numcompte}}</div>
+            
+        </div>
+        
+        <div class="Etat">
+            
+                <div class="mat-body-1">Status : {{compte.is_suspended==false? 'Active' : 'Inactive'}}</div>
+               
+           
+            
+                <div class="mat-body-1">Currency : MAD</div>
+            
+            
+                <div class="mat-body-1" *ngIf=" compte.typecompte=='epargne'"> 
+                  
+                     Interet : {{compte.taux}}%</div>
+                     <div class="mat-body-1" *ngIf=" compte.typecompte=='cheque'"> 
+                       
+                           Frais : {{compte.frais}} MAD</div>
+           
+        </div>
+    
+        <div class="Etat2">
+            <div class="Info">
+                <div class="mat-body-1">Date de création : {{compte.creation_date | date: 'dd/MM/yyyy'}}</div>
+                <div class="mat-body-1">RIB : {{ compte.numinternational}}</div>
+            </div>
+    
+            <div>
+             <!--  <button mat-raised-button [ngStyle]="compte.is_suspended == true?{'background-color':'#D76262'} : {'background-color': '#63853C'}"  (click)="updateeAccount()">{{ compte.is_suspended == true ? 'Désactiver le compte' : 'Activer le compte' }}</button>
+     --> 
+        </div>
+        </div> 
+</div>

@@ -1,0 +1,100 @@
+
+img{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    
+}
+#cc{
+  width: 95%;
+}
+nav{
+  background: #00B4DB;  
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  
+  background: linear-gradient(to left, #0083B0, #00B4DB); 
+  height:100px;
+
+}
+
+@media  (min-width: 400px)
+and (max-width: 750px) {
+  .media1 { display:none;}
+  
+}
+@media  (min-width: 750px)
+and (max-width: 950px) {
+  .vari { display:none;}
+  
+}
+.test:hover {
+      background-color: rgb(243, 243, 243);
+      border: 2px;
+      border-color: rgb(12, 106, 160);
+    }
+tbody{
+  overflow-y: hidden;      
+  height: 20%;            
+  width: 93%;
+  position: relative;
+}
+ button{
+   color: #02BDF2;
+   background-color: white;
+   font: bold;
+}
+
+#im5{
+  height:29%;  
+}
+#testtt{
+  width: 93%;
+  height: 20%;
+}
+
+
+.borderless table {
+border-top-style: none;
+border-left-style: none;
+border-right-style: none;
+border-bottom-style: none;
+}
+.panel-body{
+  height: 20%;
+  
+}
+
+tr {
+  width: 94%;
+  display: inline-table;
+  table-layout: fixed;
+ 
+  }
+ 
+ 
+  table{
+      border: none;
+               
+   display: -moz-groupbox;    
+  }
+
+.pos{
+   justify-content: center;
+  
+   
+}
+
+
+
+.panel-heading{
+   background-color: white;
+   color: #6A6A6A;
+   font:14pt arial;
+  
+}
+.container{
+   height: 30%;
+   
+    width: 85%;
+    
+}
+
